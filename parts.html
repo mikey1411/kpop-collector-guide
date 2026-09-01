@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto parts on eBay — brakes, batteries, headlights</title>
+  <meta name="description" content="Live eBay searches for brake pads, car batteries, and headlights.">
+  <style>
+:root { --bg:#121418; --ink:#f2f3f5; --muted:#b5bcc6; --card:#1c2128; --accent:#e85d04; --accent-ink:#fff; --lede:#ffe8d6; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
+.hero { position: relative; overflow: hidden; border-radius: 0 0 28px 28px; }
+.hero-img { width: 100%; height: 320px; object-fit: cover; display: block; }
+.hero-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.78) 8%, rgba(0,0,0,.18) 70%); }
+.hero-copy { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 20px 24px; color: #fff; }
+.kicker { display: inline-block; margin: 0 0 8px; background: var(--accent); color: var(--accent-ink, #fff); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4.5vw, 2.4rem); line-height: 1.15; font-weight: 800; }
+.lede { margin: 0; color: var(--lede, #eee); font-size: 1rem; max-width: 36rem; }
+.disclosure { margin: 16px 16px 8px; padding: 12px 14px; background: var(--card); border-radius: 14px; font-size: .9rem; color: var(--muted); }
+.grid { display: grid; gap: 16px; padding: 8px 16px 24px; }
+@media (min-width: 720px) {
+  .grid { grid-template-columns: 1fr 1fr; max-width: 980px; margin: 0 auto; }
+  .hero-copy { padding: 36px 40px 32px; }
+  .disclosure { max-width: 980px; margin-left: auto; margin-right: auto; }
+}
+.card { display: flex; flex-direction: column; background: var(--card); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; box-shadow: 0 10px 30px rgba(0,0,0,.18); transition: transform .15s ease, box-shadow .15s ease; }
+.card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 16px 40px color-mix(in srgb, var(--accent) 35%, transparent); outline: none; }
+.card img { width: 100%; height: 190px; object-fit: cover; display: block; background: #222; }
+.card-body { padding: 16px 16px 18px; }
+.card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+.card p { margin: 0 0 14px; color: var(--muted); font-size: .95rem; }
+.btn { display: inline-block; background: var(--accent); color: var(--accent-ink, #fff); font-weight: 700; padding: 10px 16px; border-radius: 999px; }
+.btn::after { content: " →"; }
+.tips { max-width: 980px; margin: 0 auto 32px; padding: 8px 20px 0; }
+.tips h2 { margin: 0 0 10px; font-size: 1.15rem; }
+.tips ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.tips li { margin-bottom: 6px; }
+.tips strong { color: var(--ink); }
+footer { text-align: center; padding: 8px 16px 32px; color: var(--muted); font-size: .85rem; }
+footer a { color: var(--accent); }
+.credits { font-size: .75rem; max-width: 42rem; margin: 8px auto 0; line-height: 1.4; }
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img class="hero-img" src="img/brakes.jpg" alt="A worn automotive brake disc">
+    <div class="hero-scrim"></div>
+    <div class="hero-copy">
+      <p class="kicker">Garage / parts</p>
+      <h1>Brakes, batteries, headlights — the parts you actually replace</h1>
+      <p class="lede">Live eBay searches. Match the OEM number. Cheap pads that eat rotors are not a deal.</p>
+    </div>
+  </header>
+  <p class="disclosure"><strong>Heads up:</strong> these are affiliate links. If you buy through them we may earn a commission, at no extra cost to you.</p>
+  <main class="grid" aria-label="Search links">
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=brake+pads&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=brakes&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/brakes.jpg" alt="Brake disc">
+      <div class="card-body">
+        <h2>Brake pads</h2>
+        <p>Pads and rotors. Confirm the exact vehicle fitment, not just the make.</p>
+        <span class="btn">Search brake pads</span>
+      </div>
+    </a>
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=car+battery&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=battery&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/brakes.jpg" alt="Workshop parts">
+      <div class="card-body">
+        <h2>Car batteries</h2>
+        <p>Group size and CCA matter. Check manufacture date if the listing shows one.</p>
+        <span class="btn">Search batteries</span>
+      </div>
+    </a>
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=car+headlights&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=headlights&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/brakes.jpg" alt="Automotive parts">
+      <div class="card-body">
+        <h2>Headlights</h2>
+        <p>Assemblies and bulbs. OEM vs aftermarket — read which one you are getting.</p>
+        <span class="btn">Search headlights</span>
+      </div>
+    </a>
+  </main>
+  <section class="tips">
+    <h2>Quick checks before you buy</h2>
+    <ul>
+      <li><strong>Fitment</strong> — year, make, model, engine. “Fits Honda” is not enough.</li>
+      <li><strong>Return window</strong> — electrical parts should have one.</li>
+      <li><strong>Counterfeits</strong> — branded pads at half price are a skip.</li>
+      <li><strong>These are searches</strong> — listings expire; a search stays useful.</li>
+    </ul>
+  </section>
+  <footer>
+    <p><a href="hub.html">All guides</a> · Independent buyer guide. Links open live eBay searches.</p>
+    <p class="credits">Brake disc photo: worn Citroën Jumper rotor, Wikimedia Commons (CC). Workshop page — auto parts only.</p>
+    
+  </footer>
+</body>
+</html>

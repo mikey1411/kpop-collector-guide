@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Used cars, pickups &amp; UTVs on eBay Motors</title>
+  <meta name="description" content="Live eBay Motors searches for used cars, pickup trucks, and Polaris UTVs. Buyer protection through eBay checkout.">
+  <style>
+:root { --bg:#0e0f12; --ink:#f4f1ea; --muted:#b9b3a6; --card:#1a1c21; --accent:#e0a100; --accent-ink:#1a1400; --lede:#f0e6c8; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
+.hero { position: relative; overflow: hidden; border-radius: 0 0 28px 28px; }
+.hero-img { width: 100%; height: 320px; object-fit: cover; display: block; }
+.hero-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.78) 8%, rgba(0,0,0,.18) 70%); }
+.hero-copy { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 20px 24px; color: #fff; }
+.kicker { display: inline-block; margin: 0 0 8px; background: var(--accent); color: var(--accent-ink, #fff); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4.5vw, 2.4rem); line-height: 1.15; font-weight: 800; }
+.lede { margin: 0; color: var(--lede, #eee); font-size: 1rem; max-width: 36rem; }
+.disclosure { margin: 16px 16px 8px; padding: 12px 14px; background: var(--card); border-radius: 14px; font-size: .9rem; color: var(--muted); }
+.grid { display: grid; gap: 16px; padding: 8px 16px 24px; }
+@media (min-width: 720px) {
+  .grid { grid-template-columns: 1fr 1fr; max-width: 980px; margin: 0 auto; }
+  .hero-copy { padding: 36px 40px 32px; }
+  .disclosure { max-width: 980px; margin-left: auto; margin-right: auto; }
+}
+.card { display: flex; flex-direction: column; background: var(--card); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; box-shadow: 0 10px 30px rgba(0,0,0,.18); transition: transform .15s ease, box-shadow .15s ease; }
+.card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 16px 40px color-mix(in srgb, var(--accent) 35%, transparent); outline: none; }
+.card img { width: 100%; height: 190px; object-fit: cover; display: block; background: #222; }
+.card-body { padding: 16px 16px 18px; }
+.card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+.card p { margin: 0 0 14px; color: var(--muted); font-size: .95rem; }
+.btn { display: inline-block; background: var(--accent); color: var(--accent-ink, #fff); font-weight: 700; padding: 10px 16px; border-radius: 999px; }
+.btn::after { content: " →"; }
+.tips { max-width: 980px; margin: 0 auto 32px; padding: 8px 20px 0; }
+.tips h2 { margin: 0 0 10px; font-size: 1.15rem; }
+.tips ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.tips li { margin-bottom: 6px; }
+.tips strong { color: var(--ink); }
+footer { text-align: center; padding: 8px 16px 32px; color: var(--muted); font-size: .85rem; }
+footer a { color: var(--accent); }
+.credits { font-size: .75rem; max-width: 42rem; margin: 8px auto 0; line-height: 1.4; }
+.card img { object-position: center 60%; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img class="hero-img" src="img/cars-hero.jpg" alt="A sedan on the road">
+    <div class="hero-scrim"></div>
+    <div class="hero-copy">
+      <p class="kicker">eBay Motors</p>
+      <h1>Find a used car, truck, or UTV without the dealership runaround</h1>
+      <p class="lede">Live searches — not expired listings. Compare from home, then check history and shipping.</p>
+    </div>
+  </header>
+  <p class="disclosure"><strong>Heads up:</strong> these are affiliate links. If you buy through them we may earn a commission, at no extra cost to you.</p>
+  <main class="grid" aria-label="Search links">
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=used+cars&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=cars&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/sedan.jpg" alt="Used sedan">
+      <div class="card-body">
+        <h2>Used cars</h2>
+        <p>Daily drivers and projects. Filter by year, miles, and shipping.</p>
+        <span class="btn">Browse used cars</span>
+      </div>
+    </a>
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=pickup+truck&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=pickup&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/pickup.jpg" alt="Pickup truck">
+      <div class="card-body">
+        <h2>Pickup trucks</h2>
+        <p>Work trucks and crew cabs. Read the description for rust and title status.</p>
+        <span class="btn">Search pickups</span>
+      </div>
+    </a>
+    <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=Polaris+UTV&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=utv&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
+      <img src="img/utv.jpg" alt="Polaris RZR UTV">
+      <div class="card-body">
+        <h2>Polaris UTVs</h2>
+        <p>RZR and Ranger side-by-sides. Confirm hours, mods, and freight.</p>
+        <span class="btn">Search Polaris UTV</span>
+      </div>
+    </a>
+  </main>
+  <section class="tips">
+    <h2>Quick checks before you buy</h2>
+    <ul>
+      <li><strong>Title &amp; VIN</strong> — ask before you bid. Salvage is fine if the price says so.</li>
+      <li><strong>Shipping</strong> — cars rarely ship free. Get a quote first.</li>
+      <li><strong>Inspection</strong> — a local PPI beats a pretty photo.</li>
+      <li><strong>These are searches</strong> — individual listings expire; a search stays useful.</li>
+    </ul>
+  </section>
+  <footer>
+    <p><a href="hub.html">All guides</a> · Independent buyer guide. Links open live eBay searches.</p>
+    <p class="credits">Photos via Wikimedia Commons: sedan and pickup (CC); Polaris RZR XP 900 — Tsward318 (CC).</p>
+    
+  </footer>
+</body>
+</html>
