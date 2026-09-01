@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mikey1411.github.io/kpop-collector-guide/sitemap.xml
