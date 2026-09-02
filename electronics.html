@@ -3,96 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Refurbished laptops &amp; phones on eBay</title>
-  <meta name="description" content="Live eBay searches for refurbished laptops, iPhones, and certified refurbished electronics.">
-  <style>
-:root { --bg:#0f1720; --ink:#e8eef6; --muted:#9db0c4; --card:#172230; --accent:#3b82f6; --accent-ink:#fff; --lede:#d6e8ff; }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
-.hero { position: relative; overflow: hidden; border-radius: 0 0 28px 28px; }
-.hero-img { width: 100%; height: 320px; object-fit: cover; display: block; }
-.hero-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.78) 8%, rgba(0,0,0,.18) 70%); }
-.hero-copy { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 20px 24px; color: #fff; }
-.kicker { display: inline-block; margin: 0 0 8px; background: var(--accent); color: var(--accent-ink, #fff); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; }
-.hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4.5vw, 2.4rem); line-height: 1.15; font-weight: 800; }
-.lede { margin: 0; color: var(--lede, #eee); font-size: 1rem; max-width: 36rem; }
-.disclosure { margin: 16px 16px 8px; padding: 12px 14px; background: var(--card); border-radius: 14px; font-size: .9rem; color: var(--muted); }
-.grid { display: grid; gap: 16px; padding: 8px 16px 24px; }
-@media (min-width: 720px) {
-  .grid { grid-template-columns: 1fr 1fr; max-width: 980px; margin: 0 auto; }
-  .hero-copy { padding: 36px 40px 32px; }
-  .disclosure { max-width: 980px; margin-left: auto; margin-right: auto; }
+  <title>Refurbished laptops & iPhones — live eBay</title>
+  <meta name="description" content="Live eBay searches for refurbished laptops, iPhones, and certified refurbished electronics. Ask battery health first.">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Bebas+Neue&family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Oswald:wght@500;700&display=swap');
+:root{--bg:#0c1219;--ink:#e8eef6;--muted:#9aadc2;--card:#151e28;--accent:#3b82f6;--accent-ink:#fff;--lede:#cfe0ff;--track:.02em}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.topnav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.topnav a{color:var(--accent);text-decoration:none}
+.hero{position:relative;overflow:hidden}
+.hero-img{width:100%;height:min(58vw,420px);object-fit:cover;display:block;background:#111}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 8%,rgba(0,0,0,.15) 62%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;padding:28px 20px 26px;color:#fff}
+.kicker{display:inline-block;margin:0 0 10px;background:var(--accent);color:var(--accent-ink,#fff);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.hero h1{font-family:var(--display);margin:0 0 8px;font-size:clamp(1.85rem,5.2vw,3rem);line-height:1.05;font-weight:700;letter-spacing:var(--track,0)}
+.lede{margin:0;color:var(--lede,#f0f0f0);font-size:1.05rem;max-width:38rem}
+.disclosure{margin:14px 16px 6px;padding:11px 14px;background:var(--card);border-radius:12px;font-size:.85rem;color:var(--muted)}
+.grid{display:grid;gap:18px;padding:10px 16px 28px}
+@media(min-width:760px){
+  .grid{grid-template-columns:1fr 1fr;max-width:1040px;margin:0 auto}
+  .hero-copy{padding:40px 44px 36px}
+  .disclosure{max-width:1040px;margin-left:auto;margin-right:auto}
+  .hero-img{height:420px}
 }
-.card { display: flex; flex-direction: column; background: var(--card); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; box-shadow: 0 10px 30px rgba(0,0,0,.18); transition: transform .15s ease, box-shadow .15s ease; }
-.card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 16px 40px color-mix(in srgb, var(--accent) 35%, transparent); outline: none; }
-.card img { width: 100%; height: 190px; object-fit: cover; display: block; background: #222; }
-.card-body { padding: 16px 16px 18px; }
-.card h2 { margin: 0 0 6px; font-size: 1.2rem; }
-.card p { margin: 0 0 14px; color: var(--muted); font-size: .95rem; }
-.btn { display: inline-block; background: var(--accent); color: var(--accent-ink, #fff); font-weight: 700; padding: 10px 16px; border-radius: 999px; }
-.btn::after { content: " →"; }
-.tips { max-width: 980px; margin: 0 auto 32px; padding: 8px 20px 0; }
-.tips h2 { margin: 0 0 10px; font-size: 1.15rem; }
-.tips ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
-.tips li { margin-bottom: 6px; }
-.tips strong { color: var(--ink); }
-footer { text-align: center; padding: 8px 16px 32px; color: var(--muted); font-size: .85rem; }
-footer a { color: var(--accent); }
-.credits { font-size: .75rem; max-width: 42rem; margin: 8px auto 0; line-height: 1.4; }
-
-  </style>
+.card{display:flex;flex-direction:column;background:var(--card);border-radius:22px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 14px 40px rgba(0,0,0,.22);transition:transform .15s ease, box-shadow .15s ease;border:1px solid color-mix(in srgb, var(--accent) 18%, transparent)}
+.card:hover,.card:focus-visible{transform:translateY(-5px);box-shadow:0 18px 44px color-mix(in srgb, var(--accent) 32%, transparent);outline:none}
+.card img{width:100%;height:210px;object-fit:cover;display:block;background:#0a0a0a}
+.card.card-contain img{object-fit:contain;background:#0b1020;height:250px}
+.card-body{padding:18px 18px 20px}
+.card h2{margin:0 0 6px;font-size:1.28rem;font-family:var(--display);letter-spacing:var(--track,0);font-weight:700}
+.card p{margin:0 0 16px;color:var(--muted);font-size:.98rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink,#fff);font-weight:800;padding:11px 16px;border-radius:999px;font-size:.95rem}
+.btn::after{content:" →"}
+.tips{max-width:1040px;margin:0 auto 36px;padding:4px 22px 0}
+.tips h2{margin:0 0 10px;font-size:1.15rem}
+.tips ul{margin:0;padding-left:1.15rem;color:var(--muted)}
+.tips li{margin-bottom:7px}
+.tips strong{color:var(--ink)}
+footer{text-align:center;padding:8px 16px 36px;color:var(--muted);font-size:.85rem}
+footer a{color:var(--accent);font-weight:700;text-decoration:none}
+.credits{font-size:.72rem;max-width:44rem;margin:8px auto 0;line-height:1.45}
+body{--display:'IBM Plex Sans', 'Segoe UI', sans-serif;--body:'IBM Plex Sans', 'Segoe UI', sans-serif;}</style>
 </head>
 <body>
+  <nav class="topnav"><span>Certified / refurbished</span><a href="hub.html">All guides</a></nav>
   <header class="hero">
-    <img class="hero-img" src="img/laptop.jpg" alt="A silver laptop on a white background">
+    <img class="hero-img" src="img/laptop.jpg" alt="Silver laptop open on a chair">
     <div class="hero-scrim"></div>
     <div class="hero-copy">
       <p class="kicker">Certified / refurbished</p>
-      <h1>Refurbished laptops and phones that still have a return window</h1>
-      <p class="lede">Live eBay searches. Prefer certified refurbished and sellers who show battery health.</p>
+      <h1>Pretty chassis. Dead battery. Ask first.</h1>
+      <p class="lede">Live refurbished laptops and iPhones. Prefer certified listings and sellers who show battery health.</p>
     </div>
   </header>
-  <p class="disclosure"><strong>Heads up:</strong> these are affiliate links. If you buy through them we may earn a commission, at no extra cost to you.</p>
-  <main class="grid" aria-label="Search links">
+  <p class="disclosure"><strong>Affiliate links.</strong> If you buy through them we may earn a commission. Same price for you. eBay checkout still has buyer protection.</p>
+  <main class="grid" aria-label="Live eBay searches">
     <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=refurbished+laptop&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=refurb-laptop&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
       <img src="img/laptop.jpg" alt="Refurbished laptop">
       <div class="card-body">
         <h2>Refurbished laptops</h2>
-        <p>RAM, SSD, and battery cycles. A clean chassis with a dying cell is not a deal.</p>
-        <span class="btn">Search laptops</span>
+        <p>RAM, SSD, cycle count. A mint lid with 900 cycles is a used battery in a pretty shell.</p>
+        <span class="btn">Open live laptops</span>
       </div>
     </a>
     <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=refurbished+iphone&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=refurb-iphone&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
       <img src="img/iphone.jpg" alt="Smartphone">
       <div class="card-body">
         <h2>Refurbished iPhones</h2>
-        <p>Battery health, IMEI, and whether it is carrier locked. Ask.</p>
-        <span class="btn">Search iPhones</span>
+        <p>Battery health, IMEI, carrier lock. If they will not screenshot Settings, skip.</p>
+        <span class="btn">Open live iPhones</span>
       </div>
     </a>
     <a class="card" href="https://www.ebay.com/sch/i.html?_nkw=certified+refurbished&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338419700&customid=certified-refurb&toolid=10001&mkevt=1" target="_blank" rel="nofollow sponsored noopener">
       <img src="img/laptop-phone.jpg" alt="Phone on a laptop">
       <div class="card-body">
         <h2>Certified refurbished</h2>
-        <p>eBay Refurbished and brand-certified. Warranty text is the whole point.</p>
-        <span class="btn">Search certified refurb</span>
+        <p>eBay Refurbished and brand-certified. The warranty paragraph is the product.</p>
+        <span class="btn">Open certified refurb</span>
       </div>
     </a>
   </main>
   <section class="tips">
-    <h2>Quick checks before you buy</h2>
+    <h2>Before you tap Buy</h2>
     <ul>
-      <li><strong>Battery</strong> — ask for cycle count or iOS battery health.</li>
+      <li><strong>Battery</strong> — iOS health or laptop cycle count, in a photo.</li>
       <li><strong>IMEI / serial</strong> — check blacklist before you pay.</li>
-      <li><strong>Return policy</strong> — 30 days minimum on a phone.</li>
-      <li><strong>These are searches</strong> — listings expire; a search stays useful.</li>
+      <li><strong>Returns</strong> — 30 days minimum on a phone.</li>
+      <li><strong>These are searches</strong> — listings expire; the search does not.</li>
     </ul>
   </section>
   <footer>
-    <p><a href="hub.html">All guides</a> · Independent buyer guide. Links open live eBay searches.</p>
-    <p class="credits">Photos (CC): 2021 MacBook Pro — Oops4321; iPhone 14 Pro — iGeeksBlog; iPhone on MacBook — SimonWaldherr. Via Wikimedia Commons.</p>
-    
+    <p><a href="hub.html">All guides</a> · Live searches, not expired listings.</p>
+    <p class="credits">Photos (CC): 2021 MacBook Pro — Oops4321; iPhone 14 Pro — iGeeksBlog; iPhone on MacBook — SimonWaldherr.</p>
   </footer>
 </body>
 </html>
